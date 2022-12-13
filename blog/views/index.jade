@@ -1,5 +1,16 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html(lang='en')
+  head
+    title Jade
+    //- script(type='text/javascript').
+    //-   const foo = true;
+    //-   let bar = function() {};
+    //-   if (foo) {
+    //-   bar(1 + 5)
+    //-   }
+  body
+    h1 Welcome to #{title}
+    #container.col
+      p Created with Express and nodejs
+      p
+        | Using Jade as the templating engine
